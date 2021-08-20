@@ -1,6 +1,63 @@
 @charset "UTF-8";
 
-* {
+@import url('https://fonts.googleapis.com/css2?family=Fraunces&display=swap');
 
+:root {
+    --cor0: #ffffff;
+    --cor1: #83E1AD;
+    --cor2: #3DDC84;
+    --cor3: #278d55;
+    --cor4: #000000;
+
+    --fonte-padrao: 'Fraunces', serif;
 }
 
+* {
+    font-family: var(--fonte-padrao);
+    color: var(--cor0);
+}
+
+body {
+    margin: 0px;
+    background-color: var(--cor3);
+}
+
+.conteiner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.calculadora {
+    display: grid;
+    grid-template-columns: repeat(4, 75px);
+    grid-template-rows: 160px repeat(5, 75px);
+    background-color: var(--cor2);
+    padding: 15px;
+    border-radius: 32px;
+    box-shadow: 8px 6px 10px #00000033;
+}
+
+button {
+    cursor: pointer;
+    margin: 5px;
+    padding: 0px;
+    border-radius: 32px;
+    font-size: 1.5em;
+    border: none;
+    background-color: var(--cor2);
+    box-shadow: 5px 5px 10px -3px #00000033, -5px -5px 15px 3px #ffffff18;
+}
+
+button:active {
+    background-color: var(--cor3);
+}
+
+button:focus {
+    outline: none;
+}
+
+.display {
+    grid-column: 1 / -1;
+}

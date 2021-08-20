@@ -36,7 +36,7 @@ body {
     background-color: var(--cor2);
     padding: 15px;
     border-radius: 32px;
-    box-shadow: 8px 6px 10px #00000033;
+    box-shadow: 15px 10px 0px 5px #00000033;
 }
 
 button {
@@ -47,7 +47,7 @@ button {
     font-size: 1.5em;
     border: none;
     background-color: var(--cor2);
-    box-shadow: 5px 5px 10px -3px #00000033, -5px -5px 15px 3px #ffffff18;
+    box-shadow: 5px 5px 10px -3px #00000033, -5px -5px 15px 2px #ffffff1f;
 }
 
 button:active {
@@ -58,6 +58,10 @@ button:focus {
     outline: none;
 }
 
+.col-2 {
+    grid-column: span 2;
+}
+
 .display {
     grid-column: 1 / -1;
     padding: 16px;
@@ -66,15 +70,11 @@ button:focus {
     flex-direction: column;
     align-items: flex-end;
     background-color: #00000050;
-    border-radius: 15px;
+    border-radius: 32px;
     text-align: right;
     justify-content: space-between;
     word-break: break-all;
-    box-shadow: 0px 0px 0px 6px #00000022;
-}
-
-.col-2 {
-    grid-column: span 2;
+    box-shadow: 0px 0px 0px 10px #00000022;
 }
 
 #valor-atual {

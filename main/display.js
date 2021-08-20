@@ -9,6 +9,13 @@ class Display {
     }
 
     agregarNumero(numero) {
-        this.valorAtual = numero;
+        if(numero === '.' && this.valorAtual.includes('.')) return 
+        this.valorAtual = this.valorAtual.toString() + numero.toString();
+        this.imprimirValores();
+    }
+
+    imprimirValores() {
+        this.displayValorAtual.textContent = this.valorAtual;
+        this.displayValorAnterior.textContent = this.valorAnterior;
     }
 }

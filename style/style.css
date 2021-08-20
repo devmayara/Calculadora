@@ -60,4 +60,27 @@ button:focus {
 
 .display {
     grid-column: 1 / -1;
+    padding: 16px;
+    display: flex;
+    margin: 10px 10px 20px;
+    flex-direction: column;
+    align-items: flex-end;
+    background-color: #00000050;
+    border-radius: 15px;
+    text-align: right;
+    justify-content: space-between;
+    word-break: break-all;
+    box-shadow: 0px 0px 0px 6px #00000022;
+}
+
+.col-2 {
+    grid-column: span 2;
+}
+
+#valor-atual {
+    font-size: 1.5em;
+}
+
+#valor-anterior {
+    font-size: 2em;
 }

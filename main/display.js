@@ -8,5 +8,7 @@ class Display {
         this.valorAnterior = '';
     }
 
-    agregarNumero
+    agregarNumero(numero) {
+        this.valorAtual = numero;
+    }
 }

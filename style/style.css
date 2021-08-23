@@ -87,3 +87,10 @@ button:focus {
 #valor-anterior {
     font-size: 2em;
 }
+
+.footer {
+    border-top: 2px solid #47474741;
+    margin: auto;
+    margin-bottom: 10px;
+    text-align: center;
+}

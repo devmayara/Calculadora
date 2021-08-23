@@ -7,6 +7,12 @@ class Display {
         this.tipoOperacao = undefined;
         this.valorAtual = '';
         this.valorAnterior = '';
+        this.simbolo = {
+            somar: '+', 
+            subtrair: '-',
+            multiplicar: 'x',
+            dividir: '/',
+        }
     }
 
     apagar() {
@@ -37,12 +43,12 @@ class Display {
 
     imprimirValores() {
         this.displayValorAtual.textContent = this.valorAtual;
-        this.displayValorAnterior.textContent = this.valorAnterior;
+        this.displayValorAnterior.textContent = `${this.valorAnterior} ${this.simbolo[this.tipoOperacao] || ''}`;
     }
 
     calcular() {
-        const valorAnterior = parsefloat(this.valorAnterior);
-        const valorAtual = parsefloat(this.valorAtual);
+        const valorAnterior = parseFloat(this.valorAnterior);
+        const valorAtual = parseFloat(this.valorAtual);
 
         if( isNaN(valorAtual) || isNaN(valorAnterior) ) return
         this.valorAtual = this.calculador[this.tipoOperacao](valorAnterior, valorAtual);

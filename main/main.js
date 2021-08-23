@@ -13,5 +13,7 @@ botoesNumeros.forEach(botao => {
 });
 
 botoesOperadores.forEach(botao => {
-    botao.addEventListener('click', () => display.computar(botao.value))
+    botao.addEventListener('click', () => {
+        display.computar(botao.value);
+    });
 });

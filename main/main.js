@@ -4,7 +4,7 @@ const displayValorAtual = document.getElementById('valor-atual');
 const botoesNumeros = document.querySelectorAll('.numero');
 const botoesOperadores = document.querySelectorAll('.operador');
 
-const display = new Display(displayValorAnterior, displayValorAtual);
+const display = new display(displayValorAnterior, displayValorAtual);
 
 botoesNumeros.forEach(botao => {
     botao.addEventListener('click', () => {

@@ -1,5 +1,5 @@
 
-class Display {
+class display {
     constructor (displayValorAnterior, displayValorAtual) {
         this.displayValorAtual = displayValorAtual;
         this.displayValorAnterior = displayValorAnterior;
